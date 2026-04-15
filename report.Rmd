@@ -4,3 +4,33 @@ author: "Midterm Group 2"
 date: "`r format(Sys.Date(), '%m-%d-%y')`"
 output: html_document
 ---
+
+```{r, set-chunk-opts, echo = FALSE, eval = params$production}
+library(knitr)
+opts_chunk$set(
+  echo = FALSE, warning = FALSE, message = FALSE
+)
+```
+
+```{r, here_i_am, eval = params$production}
+here::i_am(
+  "report.Rmd"
+)
+```
+
+```{r, read code}
+library(dplyr) 
+library(ggplot2)
+library(readxl)
+data <- read_excel(
+  here::here("data/nba_data.xlsx")
+)
+```
+
+#Personal Fouls Per 36 Minutes by Team
+
+#Position and 3-Point Field Goal Attempts
+
+#All Star Awards by Position
+
+#Games Started and 3-Pointers & Free Throws
