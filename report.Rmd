@@ -95,7 +95,8 @@ boxplot_s <- readRDS(
 
 print(table_s)
 
-print(tukey_s)
+print(knitr::kable(as.data.frame(tukey_s), digits = 3))
+#figure out better way to format this table for the final?
 
 print(boxplot_s)
 }

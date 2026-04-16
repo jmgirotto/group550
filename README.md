@@ -2,26 +2,20 @@
 
 This group project is an analysis of NBA player statistics. 
 
-## Categories for the Report
-
-- `all` All categories of interest shown
-- `pf`  Only Personal Fouls Per 36 Minutes by Team
-- `fg`  Only Position and 3-Point Field Goal Attempts
-- `asa` Only All Star Awards by Position
-- `games` Only Games Started and 3-Pointers & Free Throws
-
 ## How to Build our Report
 
-1. Ensure that your organizational structure matches the below. Run "make clean"
+1. Change your working directory to match the current repository ("group550")
+
+2. Ensure that your organizational structure matches the below. Run "make clean"
 in the terminal to ensure everything is set up correctly. 
 
-2. Decide which category you would like to view in the report. Open report.RMD
+3. Decide which category you would like to view in the report. Open report.RMD
 change the section:"" in the report to the category you would like. Save the report. 
 
-3. Now that your structure is correct and clean, run "make" in the terminal to
+4. Now that your structure is correct and clean, run "make" in the terminal to
 run all our code and produce the report.html file showing your category of interest!
 
-4. Open the report.html file and enjoy your report!
+5. Open the report.html file and enjoy your report!
 
 ## Structure of Repository
 
@@ -50,3 +44,12 @@ folder. We also have the NBA codebook spreadsheet in this folder for reference
 formatted report
 
 This `README.md` document with instructions
+
+## Categories for the Report
+This goes in the yamal header of the report.Rmd
+
+- `all` All categories of interest shown
+- `pf`  Only Personal Fouls Per 36 Minutes by Team
+- `fg`  Only Position and 3-Point Field Goal Attempts
+- `asa` Only All Star Awards by Position
+- `games` Only Games Started and 3-Pointers & Free Throws
