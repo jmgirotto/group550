@@ -3,7 +3,7 @@ all: report.html
 
 # Compiling final html report - need to add other code!
 report.html: report.Rmd code/render_report.R \
-all_pe all_sl all_em mm_all
+all_pe all_sl all_em all_mm
 	Rscript code/render_report.R
 
 # PE Outputs
@@ -47,9 +47,9 @@ output/em_output/Position_AS_barchart.png: code/code_em/em_code_01.R
 	Rscript code/code_em/em_code_01.R
 
 #MM Outputs
-.PHONY: mm_all
+.PHONY: all_mm
 
-mm_all: output/output_mm/summary_3p_mm.rds \
+all_mm: output/output_mm/summary_3p_mm.rds \
              output/output_mm/summary_ft_mm.rds \
              output/output_mm/scatterplot_3pbgs_mm.rds \
              output/output_mm/scatterplot_ftbgs_mm.rds
